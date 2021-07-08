@@ -1,0 +1,5 @@
+*pyc
+log/*
+saved_models/*
+*pth
+gen_images/*
