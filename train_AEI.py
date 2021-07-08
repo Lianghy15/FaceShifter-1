@@ -60,7 +60,7 @@ G, opt_G = amp.initialize(G, opt_G, opt_level=optim_level)
 D, opt_D = amp.initialize(D, opt_D, opt_level=optim_level)
 
 try:
-    G.load_state_dict(torch.load(model_save_path + '/G_latest.pth', map_location=torch.device('cpu')), strict=False)
+    G.load_state_dict(torch.load('saved_models/G_latest.pth', map_location=torch.device('cpu')), strict=False)
     D.load_state_dict(torch.load(model_save_path + '/D_latest.pth', map_location=torch.device('cpu')), strict=False)
 except Exception as e:
     print(e)
